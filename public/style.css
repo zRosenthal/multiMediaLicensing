@@ -1,0 +1,17 @@
+body {
+    width: 100%;
+    position: absolute;
+}
+section {
+    width: 45%;
+}
+#left {
+    float: left;
+}
+#right {
+    float: right;
+}
+
+#right h5 {
+    margin-top: 2px;
+}

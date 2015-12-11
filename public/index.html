@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MultiMedia Scrambler</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1>Purchase Media</h1>
+<p id="purchase options">
+    <h4>Please select a file to purchase.</h4>
+    <button onclick="purchase(this.innerHTML); return false;">mp3</button>
+    <button onclick="purchase(this.innerHTML); return false;">jpg</button>
+    <button onclick="purchase(this.innerHTML); return false;">mp4</button>
+</p>
+<div id="main-content" hidden>
+
+    <section id="left">
+        <span>Product Key: <input id="product-key" size="80" type="text" style="display: none;" disabled></span>
+
+        <h5>Scrambled Media (should be unviewable/unplayable)</h5>
+        <div id="s">
+
+        </div>
+    </section>
+
+    <section id="right">
+        <h5>Enter Product Key to view media.</h5>
+        Product Key: <input id="key-input" type="text">
+        <select id="media-type">
+            <option value="test.jpg">JPG</option>
+            <option value="test.mp3">MP3</option>
+            <option value="test.mp4">MP4</option>
+        </select>
+        <button type="submit" onclick="unlock()">Submit</button>
+
+        <h5>Unscrambled Media</h5>
+
+        <div id="u">
+
+        </div>
+    </section>
+</div>
+
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="func.js"></script>
+</body>
+</html>
